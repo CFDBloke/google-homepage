@@ -1,8 +1,9 @@
+/* Class Selectors */
 .main-content {
-    position: fixed;
+    display: block;
+    position: relative;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0%;
     margin: auto;
     width: 30%;
     justify-content: center;
@@ -25,13 +26,6 @@
     border-color: rgba(220,220,220,0.5);
 }
 
-ul {
-    list-style-type: none;
-    width: 100%;
-    margin:0;
-    padding: 0;
-}
-
 .navleft {
     float: left;
 }
@@ -40,21 +34,97 @@ ul {
     float: right;
 }
 
-a {
-    display: block;
-    margin: 0px 5px;
-    padding: 5px;
-    text-decoration: none;
-    color: black;
-    font-family:Arial, sans-serif;
-    font-size: 14px;
+.button-container {
+    display:block;
+    width:fit-content;
+    margin-left: auto;
+    margin-right:auto;
 }
 
-a:hover {
-    text-decoration: underline;
+/* ID Selectors */
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
 }
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    padding: 20px 0px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: rgba(220,220,220,0.5);
+}
+
+#spacer {
+    height: 200px;
+    max-height: 350px;
+}
+
+/* Type Selectors */
+
+ul {
+    text-align: center;
+    display: table;
+    list-style-type: none;
+    width: 100%;
+    height: 2.5em;
+    margin:0;
+    padding: 5px 20px;
+}
+
+ui li {
+    height: 100%;
+}
+
+ul li a {
+    display: table-cell;
+    margin: auto;
+    height: 2.5em;
+    padding: 5px;
+    text-decoration: none;
+    color: #222222;
+    font-family:Arial, sans-serif;
+    font-size: 14px;
+    line-height: 100%;
+    vertical-align: middle;
+}
+
+/*ul.c {
+    text-align:center;
+    display:table;
+}
+
+ul li {   
+    float:left;    
+}
+
+ul li a {
+    text-decoration:none;
+    border: 1px solid Maroon;
+    padding:2px 12px;
+    background:#FFEF8A;
+    width:100px;
+    height:52px;
+    display:table-cell;
+    vertical-align:middle;
+} */
+
+nav {
+    height: 2.5em;
+    display: block;
+    align-content: center;
+}
+
 body {
-    margin: 15px;
+    margin: 0;
 }
 
 button {
@@ -67,9 +137,8 @@ button {
     border-radius: 3px;
 }
 
-.button-container {
-    display:block;
-    width:fit-content;
-    margin-left: auto;
-    margin-right:auto;
+/* Events */
+
+a:hover {
+    text-decoration: underline;
 }
