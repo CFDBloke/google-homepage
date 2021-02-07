@@ -1,0 +1,22 @@
+.main-content {
+    margin: auto;
+    width: 30%;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.searchbar {
+    display: block;
+    margin:auto;
+    padding: 10px;
+    height: 20px;
+    width: 100%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgba(220,220,220,0.5);
+}
